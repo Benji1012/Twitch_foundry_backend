@@ -1,9 +1,9 @@
-package controller;
+package FantaziaSoftHungary.Twitch_foundry_backend.controller;
 
 import org.springframework.web.bind.annotation.*;
 
-import model.UserConfig;
-import repository.UserConfigRepository;
+import FantaziaSoftHungary.Twitch_foundry_backend.model.UserConfig;
+import FantaziaSoftHungary.Twitch_foundry_backend.repository.UserConfigRepository;
 
 import java.util.Optional;
 
