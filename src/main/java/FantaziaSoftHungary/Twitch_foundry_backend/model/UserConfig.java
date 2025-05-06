@@ -32,6 +32,7 @@ public class UserConfig {
     private String player4Uuid;
     private String player5Uuid;
     private String player6Uuid;
+    private String clientId;
 	public Long getId() {
 		return id;
 	}
@@ -134,10 +135,16 @@ public class UserConfig {
 	public void setPlayer6Uuid(String player6Uuid) {
 		this.player6Uuid = player6Uuid;
 	}
+	public String getClientId() {
+		return clientId;
+	}
+	public void setClientId(String clientId) {
+		this.clientId = clientId;
+	}
 	public UserConfig(Long id, String twitchUsername, String twitchToken, String foundryApiUrl, String foundryApiKey,
 			String player1Name, String player2Name, String player3Name, String player4Name, String player5Name,
 			String player6Name, String player1Uuid, String player2Uuid, String player3Uuid, String player4Uuid,
-			String player5Uuid, String player6Uuid) {
+			String player5Uuid, String player6Uuid, String clientId) {
 		super();
 		this.id = id;
 		this.twitchUsername = twitchUsername;
@@ -156,6 +163,10 @@ public class UserConfig {
 		this.player4Uuid = player4Uuid;
 		this.player5Uuid = player5Uuid;
 		this.player6Uuid = player6Uuid;
+		this.clientId = clientId;
+	}
+	public UserConfig() {
+		super();
 	}
 }
 
